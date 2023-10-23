@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2774686072552689980}
   - component: {fileID: 2774686072552689981}
   - component: {fileID: 2774686072552689982}
+  - component: {fileID: 8953335223435242817}
   - component: {fileID: 2774686072552689983}
   - component: {fileID: 2774686072552689976}
   - component: {fileID: 2774686072552689977}
@@ -155,7 +156,6 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
-  moveSpeed: 7
   jumpForce: 14
   jumpSoundEffect: {fileID: 2774686072552689983}
 --- !u!95 &2774686072552689980
@@ -193,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cherriesText: {fileID: 0}
   collectionSoundEffect: {fileID: 2774686072552689976}
+  playerMovement: {fileID: 0}
 --- !u!114 &2774686072552689982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +207,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSoundEffect: {fileID: 2774686072552689977}
+--- !u!114 &8953335223435242817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774686073552295981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1e98ad6069d964a8b57a61ca81e728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepDistance: 0.5
+  stepCountText: {fileID: 0}
 --- !u!82 &2774686072552689983
 AudioSource:
   m_ObjectHideFlags: 0
