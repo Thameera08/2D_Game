@@ -847,7 +847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -366.38998, y: 214.59999}
+  m_AnchoredPosition: {x: -348.78998, y: 214.59999}
   m_SizeDelta: {x: 142.02, y: 33.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547920412
@@ -906,6 +906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cherriesText: {fileID: 547920412}
   collectionSoundEffect: {fileID: 0}
+  playerMovement: {fileID: 0}
 --- !u!1001 &590542510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1031,6 +1032,9 @@ GameObject:
   - component: {fileID: 729653649}
   - component: {fileID: 729653651}
   - component: {fileID: 729653650}
+  - component: {fileID: 729653652}
+  - component: {fileID: 729653653}
+  - component: {fileID: 729653654}
   m_Layer: 5
   m_Name: Mobile Controller
   m_TagString: Untagged
@@ -1058,7 +1062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.005004883, y: 5.600006}
+  m_AnchoredPosition: {x: 0.005004883, y: 0.000030517578}
   m_SizeDelta: {x: 0.01001, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &729653650
@@ -1099,6 +1103,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729653648}
   m_CullTransparentMesh: 1
+--- !u!95 &729653652
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729653648}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 989ee3052cab36f46be9a24973ed84df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &729653653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729653648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9108df2b128b5ef4fb73f23e78d2f540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpableGround:
+    serializedVersion: 2
+    m_Bits: 0
+  moveSpeed: 7
+  jumpForce: 14
+  jumpSoundEffect: {fileID: 0}
+--- !u!50 &729653654
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729653648}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &787815742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3329,7 +3393,6 @@ GameObject:
   - component: {fileID: 1583404661}
   - component: {fileID: 1583404660}
   - component: {fileID: 1583404659}
-  - component: {fileID: 1583404662}
   m_Layer: 5
   m_Name: Left Button
   m_TagString: Untagged
@@ -3412,7 +3475,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 1
 --- !u!114 &1583404660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3451,35 +3514,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583404657}
   m_CullTransparentMesh: 1
---- !u!114 &1583404662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583404657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 0
 --- !u!1 &1723589439
 GameObject:
   m_ObjectHideFlags: 0
@@ -6236,6 +6270,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2774686072552689978, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
   m_PrefabInstance: {fileID: 2774686072911086779}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2125256072 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2774686072552689971, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+  m_PrefabInstance: {fileID: 2774686072911086779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d68567090aa2a342b4e92df578cb4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2127941909
 GameObject:
   m_ObjectHideFlags: 0
@@ -6425,6 +6470,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2774686072552689969, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2774686072552689978, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6473,6 +6522,10 @@ PrefabInstance:
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 547920412}
+    - target: {fileID: 2774686072552689981, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 2125256072}
     - target: {fileID: 2774686073552295981, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: m_Name
       value: Player

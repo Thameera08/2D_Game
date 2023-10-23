@@ -423,7 +423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 27.998}
+  m_AnchoredPosition: {x: -1, y: 27.998}
   m_SizeDelta: {x: 412.7422, y: 79.1443}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216154601
@@ -459,7 +459,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LIFEBOY MEGA RUN
+  m_Text: LIFEBOY GERM RUN
 --- !u!222 &216154602
 CanvasRenderer:
   m_ObjectHideFlags: 0
