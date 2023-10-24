@@ -10,6 +10,7 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private Text cherriesText;
     [SerializeField] private AudioSource collectionSoundEffect;
     [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private Player_Life playerLife; // Add this field
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,6 +24,9 @@ public class ItemCollector : MonoBehaviour
             float originalSpeed = playerMovement.OriginalSpeed;
             playerMovement.ChangeSpeed(2 * originalSpeed);
             StartCoroutine(ResetPlayerSpeedAfterDelay(3f));
+
+            // Make the player invulnerable for 2 seconds after collecting a cherry
+            playerLife.MakeInvulnerable();
         }
     }
 

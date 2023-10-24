@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2774686072552689980}
   - component: {fileID: 2774686072552689981}
   - component: {fileID: 2774686072552689982}
-  - component: {fileID: 8953335223435242817}
+  - component: {fileID: 6964394816482933908}
   - component: {fileID: 2774686072552689983}
   - component: {fileID: 2774686072552689976}
   - component: {fileID: 2774686072552689977}
@@ -194,6 +194,7 @@ MonoBehaviour:
   cherriesText: {fileID: 0}
   collectionSoundEffect: {fileID: 2774686072552689976}
   playerMovement: {fileID: 0}
+  playerLife: {fileID: 0}
 --- !u!114 &2774686072552689982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSoundEffect: {fileID: 2774686072552689977}
---- !u!114 &8953335223435242817
+--- !u!114 &6964394816482933908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

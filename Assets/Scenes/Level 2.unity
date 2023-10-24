@@ -1196,6 +1196,7 @@ MonoBehaviour:
   cherriesText: {fileID: 547920412}
   collectionSoundEffect: {fileID: 0}
   playerMovement: {fileID: 0}
+  playerLife: {fileID: 0}
 --- !u!4 &559834085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9203199078697939853, guid: 6eced494439c5a1439fddaa3d0a8a69e, type: 3}
@@ -3559,7 +3560,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 369.74146, y: -146.09998}
-  m_SizeDelta: {x: 55, y: 55}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1006681727
 MonoBehaviour:
@@ -3942,7 +3943,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -296, y: -148.9}
-  m_SizeDelta: {x: 55, y: 55}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1201318378
 MonoBehaviour:
@@ -4415,7 +4416,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -388, y: -148.9}
-  m_SizeDelta: {x: 55, y: 55}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1670836944
 MonoBehaviour:
@@ -6288,7 +6289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.005004883, y: 2.800003}
+  m_AnchoredPosition: {x: -0.005004883, y: 2.7999878}
   m_SizeDelta: {x: 0.0099, y: 5.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866993077
@@ -7588,7 +7589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774686072552689978, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.030001
+      value: 6.41
       objectReference: {fileID: 0}
     - target: {fileID: 2774686072552689978, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: m_LocalPosition.z

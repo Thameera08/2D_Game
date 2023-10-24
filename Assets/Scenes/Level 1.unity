@@ -848,7 +848,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -335.99, y: 191}
+  m_AnchoredPosition: {x: -349.19, y: 201.40002}
   m_SizeDelta: {x: 142.02, y: 33.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547920412
@@ -908,6 +908,7 @@ MonoBehaviour:
   cherriesText: {fileID: 547920412}
   collectionSoundEffect: {fileID: 0}
   playerMovement: {fileID: 0}
+  playerLife: {fileID: 0}
 --- !u!1001 &590542510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1151,19 +1152,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729653648}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1001 &787815742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3419,7 +3420,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -388, y: -148.9}
-  m_SizeDelta: {x: 55, y: 55}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583404659
 MonoBehaviour:
@@ -5151,7 +5152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -327, y: 222.8}
+  m_AnchoredPosition: {x: -340.2, y: 233.20004}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1852405320
@@ -5208,7 +5209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1e98ad6069d964a8b57a61ca81e728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepDistance: 0.5
+  stepDistance: 0.2
   stepCountText: {fileID: 1852405320}
 --- !u!1 &1873088252
 GameObject:
@@ -5247,7 +5248,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -296, y: -148.9}
-  m_SizeDelta: {x: 55, y: 55}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873088254
 MonoBehaviour:
@@ -6377,6 +6378,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d68567090aa2a342b4e92df578cb4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2125256077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2774686072552689982, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+  m_PrefabInstance: {fileID: 2774686072911086779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31d683d342802b479aaa40308903ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2127941909
 GameObject:
   m_ObjectHideFlags: 0
@@ -6414,7 +6426,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 369.74152, y: -148.9}
-  m_SizeDelta: {x: 55, y: 55}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2127941911
 MonoBehaviour:
@@ -6580,7 +6592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774686072552689978, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.43
+      value: 6.73
       objectReference: {fileID: 0}
     - target: {fileID: 2774686072552689978, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6615,6 +6627,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774686072552689981, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+      propertyPath: playerLife
+      value: 
+      objectReference: {fileID: 2125256077}
+    - target: {fileID: 2774686072552689981, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 547920412}
@@ -6626,6 +6642,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6964394816482933908, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+      propertyPath: stepDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964394816482933908, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+      propertyPath: stepCountText
+      value: 
+      objectReference: {fileID: 1852405320}
     - target: {fileID: 8953335223435242817, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: stepCountText
       value: 
