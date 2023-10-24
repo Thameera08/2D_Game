@@ -3419,7 +3419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -388, y: -148.9}
+  m_AnchoredPosition: {x: -377.5, y: -148.9}
   m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583404659
@@ -5152,8 +5152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340.2, y: 233.20004}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -308.02716, y: 233.20004}
+  m_SizeDelta: {x: 224.3457, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1852405320
 MonoBehaviour:
@@ -5188,7 +5188,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Step Count: 0'
+  m_Text: 'Step Count: 000'
 --- !u!222 &1852405321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5209,7 +5209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1e98ad6069d964a8b57a61ca81e728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepDistance: 0.2
+  stepDistance: 0.003
   stepCountText: {fileID: 1852405320}
 --- !u!1 &1873088252
 GameObject:
@@ -5247,7 +5247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -296, y: -148.9}
+  m_AnchoredPosition: {x: -286.5, y: -148.9}
   m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873088254
@@ -6644,7 +6644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6964394816482933908, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: stepDistance
-      value: 0.2
+      value: 0.003
       objectReference: {fileID: 0}
     - target: {fileID: 6964394816482933908, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: stepCountText
