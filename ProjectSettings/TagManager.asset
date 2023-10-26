@@ -49,3 +49,6 @@ TagManager:
   - name: Tarrain
     uniqueID: 982609315
     locked: 0
+  - name: New Layer 3
+    uniqueID: 3961670719
+    locked: 0

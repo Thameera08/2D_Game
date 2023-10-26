@@ -24,7 +24,7 @@ public class Finish : MonoBehaviour
 
     private void CompleteLevel1()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         
     }
 
@@ -34,4 +34,5 @@ public class Finish : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }
+    
 }

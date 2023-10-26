@@ -62,4 +62,9 @@ public class Steps2D : MonoBehaviour
     {
         isJumping = false;
     }
+
+    public int GetStepCount()
+{
+    return stepCount;
+}
 }

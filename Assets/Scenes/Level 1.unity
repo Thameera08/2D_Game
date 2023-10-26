@@ -5388,6 +5388,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d68567090aa2a342b4e92df578cb4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2125256077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2774686072552689982, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+  m_PrefabInstance: {fileID: 2774686072911086779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31d683d342802b479aaa40308903ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2099151277385085065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5500,6 +5511,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774686072552689981, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+      propertyPath: playerLife
+      value: 
+      objectReference: {fileID: 2125256077}
     - target: {fileID: 2774686072552689981, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: cherriesText
       value: 
