@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 51089497}
   - component: {fileID: 51089496}
   - component: {fileID: 51089495}
+  - component: {fileID: 51089498}
   m_Layer: 5
   m_Name: Settings Button
   m_TagString: Untagged
@@ -160,7 +161,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 886, y: 478}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &51089495
 MonoBehaviour:
@@ -205,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 51089496}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 51089498}
+        m_TargetAssemblyTypeName: Settings, Assembly-CSharp
+        m_MethodName: movesettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &51089496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +257,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51089493}
   m_CullTransparentMesh: 1
+--- !u!114 &51089498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51089493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46933fc581d8e0e48a5c3b312573e7f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &127474435
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984578968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.5, y: 3.2, z: 1.9}
+  m_LocalPosition: {x: 28.77, y: 3.2, z: 1.9}
   m_LocalScale: {x: 1.6881909, y: 1.6881909, z: 1.6881909}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5294,6 +5319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stepDistance: 0.003
   stepCountText: {fileID: 1928938135}
+  level2move: {fileID: 0}
 --- !u!114 &1928938135
 MonoBehaviour:
   m_ObjectHideFlags: 0

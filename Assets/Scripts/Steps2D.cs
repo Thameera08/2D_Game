@@ -12,6 +12,7 @@ public class Steps2D : MonoBehaviour
 
     [SerializeField] private float stepDistance = 0.5f;
     [SerializeField] private Text stepCountText;
+    [SerializeField] private level2move level2move; // Reference to the MoveLevel2 script
 
     private bool isJumping;
 
@@ -40,6 +41,12 @@ public class Steps2D : MonoBehaviour
                     stepCount++;
                     // Update step count with leading zeros
                     stepCountText.text = "Step Count: " + stepCount.ToString("D3");
+
+                    // Send a message to the MoveLevel2 script to update the step count
+                    if (level2move != null)
+                    {
+                        level2move.UpdateStepCount(stepCount);
+                    }
                 }
             }
             else
@@ -64,7 +71,7 @@ public class Steps2D : MonoBehaviour
     }
 
     public int GetStepCount()
-{
-    return stepCount;
-}
+    {
+        return stepCount;
+    }
 }
