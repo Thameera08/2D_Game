@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 51089498}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
-        m_MethodName: movesettings
+        m_MethodName: MoveToSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

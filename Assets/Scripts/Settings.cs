@@ -5,23 +5,48 @@ using UnityEngine.SceneManagement;
 
 public class Settings : MonoBehaviour
 {
-    public void movesettings()
+    private bool isPaused = false;
+    private int originalSceneIndex;
+
+    private void Start()
     {
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+        originalSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
-    public void resume()
+    public void MoveToSettings()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
     }
 
-    public void playagain()
+    public void Resume()
+    {
+        if (isPaused)
+        {
+            Time.timeScale = 1; // Unpause the game
+            isPaused = false;
+        }
+    }
+
+    public void PlayAgain()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-        public void quit()
+    public void Quit()
     {
+        Application.Quit();
+    }
 
+    public void TogglePause()
+    {
+        if (isPaused)
+        {
+            Resume();
+        }
+        else
+        {
+            Time.timeScale = 0; // Pause the game by setting time scale to 0
+            isPaused = true;
+        }
     }
 }
