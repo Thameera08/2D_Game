@@ -950,7 +950,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2041603163}
         m_TargetAssemblyTypeName: level2move, Assembly-CSharp
-        m_MethodName: movenextstep
+        m_MethodName: MoveLevel2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

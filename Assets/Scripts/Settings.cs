@@ -7,6 +7,7 @@ public class Settings : MonoBehaviour
 {
     private bool isPaused = false;
     private int originalSceneIndex;
+    private Vector3 playerPosition;
 
     private void Start()
     {
@@ -15,21 +16,35 @@ public class Settings : MonoBehaviour
 
     public void MoveToSettings()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+        if (!isPaused)
+        {
+            // Pause the game
+            TogglePause();
+
+            // Save the player's position before moving to settings
+            playerPosition = transform.position; // Assuming you're controlling the player's position
+        }
+        
+        // Load the settings scene
+        SceneManager.LoadScene("Settings");
     }
 
     public void Resume()
     {
         if (isPaused)
         {
-            Time.timeScale = 1; // Unpause the game
-            isPaused = false;
+            // Unpause the game
+            TogglePause();
+            
+            // Move the player back to where they left off
+            transform.position = playerPosition;
         }
     }
 
     public void PlayAgain()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(originalSceneIndex);
+        // Make sure to reset any game-specific variables or state if needed
     }
 
     public void Quit()
@@ -41,7 +56,8 @@ public class Settings : MonoBehaviour
     {
         if (isPaused)
         {
-            Resume();
+            Time.timeScale = 1; // Unpause the game
+            isPaused = false;
         }
         else
         {

@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2774686072552689981}
   - component: {fileID: 2774686072552689982}
   - component: {fileID: 6964394816482933908}
+  - component: {fileID: 8301790756168740778}
   - component: {fileID: 2774686072552689983}
   - component: {fileID: 2774686072552689976}
   - component: {fileID: 2774686072552689977}
@@ -222,6 +223,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stepDistance: 0.5
   stepCountText: {fileID: 0}
+  level2move: {fileID: 0}
+--- !u!114 &8301790756168740778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774686073552295981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46933fc581d8e0e48a5c3b312573e7f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &2774686072552689983
 AudioSource:
   m_ObjectHideFlags: 0
