@@ -6,11 +6,19 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public GameObject pauseMenuScreen;
+    public AudioSource backgroundMusic;
+    public AudioSource soundEffect;
+    private float defaultVolume;
+
 
     public static Vector2 lastCheckPointPos = new Vector2(-3,0);
 
     int characterIndex;
 
+  private void Start()
+    {
+        defaultVolume = backgroundMusic.volume;
+    }
     public void ReplayLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -33,6 +41,21 @@ public class PlayerManager : MonoBehaviour
 
     public void QuitGame()
     {
+        
+    }
+
+    public void Mute()
+    {
+   
+        backgroundMusic.mute = true;
+        soundEffect.mute = true;
+    }
+
+    public void Sound()
+    {
+  
+        backgroundMusic.mute = false;
+        soundEffect.mute = false;
         
     }
 }
