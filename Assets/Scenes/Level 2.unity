@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6e00f8b39315691449f256740a5cb862, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.673305, g: 0.5181906, b: 0.34589565, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -942,7 +942,7 @@ SpriteRenderer:
   m_SortingLayerID: 972606233
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0246721e5c5d6c8488af89fe4d8b38ab, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -950,7 +950,7 @@ SpriteRenderer:
   m_Size: {x: 134.4, y: 10.828124}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &418708805
@@ -1144,7 +1144,7 @@ Camera:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.31764707, g: 0.31764707, b: 0.31764707, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -9611,6 +9611,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d68567090aa2a342b4e92df578cb4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2125256078 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2774686072552689982, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+  m_PrefabInstance: {fileID: 2774686072911086779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31d683d342802b479aaa40308903ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2130361162
 GameObject:
   m_ObjectHideFlags: 0
@@ -9912,6 +9923,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774686072552689981, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+      propertyPath: playerLife
+      value: 
+      objectReference: {fileID: 2125256078}
+    - target: {fileID: 2774686072552689981, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 547920412}
@@ -9923,6 +9938,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6964394816482933908, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+      propertyPath: stepDistance
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964394816482933908, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
+      propertyPath: stepCountText
+      value: 
+      objectReference: {fileID: 1945746342}
     - target: {fileID: 8301790756168740778, guid: 4137566f60c9f36488e97ec126eb6e97, type: 3}
       propertyPath: soundEffect
       value: 
